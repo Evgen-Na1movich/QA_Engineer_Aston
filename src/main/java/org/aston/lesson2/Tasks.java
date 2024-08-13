@@ -131,6 +131,15 @@ public class Tasks {
     }
 
     /**
+     * Метод для печати массива на экран.
+     *
+     * @param array массив целых чисел, который нужно вывести.
+     */
+    public static void printArray(int[] array) {
+        System.out.println(Arrays.toString(array));
+    }
+
+    /**
      * Метод arrayChange создает массив целых чисел, состоящий из элементов 0 и 1,
      * и заменяет каждый элемент массива на противоположный: 0 на 1 и 1 на 0.
      * Исходный и измененный массивы выводятся в консоль.
@@ -139,14 +148,14 @@ public class Tasks {
         System.out.println("*****task10*****");
         int[] array = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         System.out.println("Исходный массив:");
-        System.out.println(Arrays.toString(array));
+        printArray(array);
 
         for (int i = 0; i < array.length; i++) {
             array[i] = (array[i] == 0) ? 1 : 0;
         }
 
         System.out.println("Измененный массив:");
-        System.out.println(Arrays.toString(array));
+        printArray(array);
     }
 
     /**
@@ -162,7 +171,7 @@ public class Tasks {
             array[i] = i + 1;
         }
 
-        System.out.println(Arrays.toString(array));
+        printArray(array);
     }
 
     /**
@@ -174,14 +183,14 @@ public class Tasks {
         System.out.println("*****task12*****");
         int[] array = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         System.out.println("Исходный массив:");
-        System.out.println(Arrays.toString(array));
+        printArray(array);
 
         for (int i = 0; i < array.length; i++) {
             array[i] = (array[i] < 6) ? array[i] * 2 : array[i];
         }
 
         System.out.println("Измененный массив");
-        System.out.println(Arrays.toString(array));
+        printArray(array);
     }
 
     /**
